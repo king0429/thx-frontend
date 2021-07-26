@@ -1,6 +1,6 @@
 {
   "base_url": {
-    "dev": "https://test.api.web.vendor.mokkaya.com",
+    "dev": "http://127.0.0.1:7001",
     "prod": "https://api.vendor.mokkaya.com"
   },
   "firebase": {
@@ -30,7 +30,7 @@
     "prod": "yn"
   },
   "resellerDomain": {
-    "dev": "https://test.mokkaya.com",
+    "dev": "localhost:7001",
     "prod": "https://mokkaya.com"
   },
   "logisiticDomain": {
