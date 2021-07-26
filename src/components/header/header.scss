@@ -1,0 +1,58 @@
+@import '../../theme.scss';
+
+.base_header {
+  height: $headerHeight;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  // box-shadow: 3px 3px 3px 4px #aaa;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      border-radius: 5px;
+    }
+    span {
+      margin-left: 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      i {
+        color: $themeColor;
+      }
+      span {
+        margin-left: 5px;
+        transition: all ease-in .35s;
+        font-size: 14px;
+        // font-weight: bold;
+        color: #343535;
+      }
+    }
+    li.logout:hover {
+      cursor: pointer;
+      span {
+        color: $themeColor;
+      }
+    }
+  }
+}

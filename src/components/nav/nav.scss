@@ -1,0 +1,110 @@
+@import '../../theme.scss';
+
+.nav_wrap {
+  width: $navWidth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: $headerHeight + 1px;
+  background: linear-gradient(to bottom, $themeColor 28%, rgb(59,191,220));
+  z-index: 999;
+  li {
+    // width: calc(100% / 3);
+    width: 100%;
+    list-style: none;
+    color: #fff;
+    min-height: $navItemHeight;
+    transition: all ease-in .3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    &>div:first-child {
+      display: flex;
+      padding: 0 20px;
+      justify-content: flex-start;
+      align-items: center;
+      height: $navItemHeight;
+      transition: all ease-in .25s;
+      &>span {
+        margin: 0 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        height: 100%;
+        padding: 5px 0;
+        i {
+          font-size: 20px;
+          width: 24px;
+        }
+      }
+    }
+    &>div:first-child:hover {
+      background: #fff;
+      color: $themeColor;
+      span {
+        i {
+          color: $themeColor;
+        }
+      }
+    }
+    .nav_child {
+      transition: all .4s ease-in;
+      overflow: hidden;
+      max-height: 0;
+      div {
+        padding: 0 30px;
+        color: #fff;
+        line-height: $navItemHeight;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all ease-in .25s;
+        span {
+          margin: 0 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+      div:hover {
+        background: #fff;
+        color: $themeColor;
+        span {
+          svg {
+            color: $themeColor;
+          }
+        }
+      }
+      .inner_sel {
+        background-color: #fff;
+        color: $themeColor;
+        span {
+          i {
+            color: $themeColor;
+          }
+        }
+      }
+    }
+  }
+  li:first-child {
+    &>div:first-child>span>i {
+      font-size: 24px;
+    }
+  }
+  li.sel {
+    background-color: #fff;
+    color: $themeColor;
+    span {
+      i {
+        color: $themeColor;
+      }
+    }
+  }
+}

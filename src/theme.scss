@@ -1,0 +1,62 @@
+$navItemHeight: 62px;
+$themeColor: #6374F9;
+$secondThemeColor: rgb(59,191,220);
+$navWidth: 300px;
+$headerHeight: 62px;
+$successColor: #52c41a;
+$warnColor: #faad14;
+$errorColor: #f5222d;
+$borderColor: #d9d9d9;
+
+$actionColor-0: #CCCCCC;
+$actionColor-1: #99CCFF;
+$actionColor-2: #0099FF;
+$actionColor-3: #6699FF;
+$actionColor-4: #3399CC;
+$actionColor-5: #003366;
+$actionColor-6: #FFFFCC;
+$actionColor-7: #FFFF66;
+$actionColor-success: $successColor;
+$actionColor-wran: $warnColor;
+$actionColor-error: $errorColor;
+
+@function actionBg ($args) {
+  @return $actionColor-#{$args};
+}
+.theme-color {
+  color: $themeColor !important;
+}
+.ant-spin-dot-item {
+  background-color: $themeColor;
+}
+.ant-spin-text {
+  color: $themeColor;
+}
+ .ant-btn-primary, .ant-btn-primary:hover, .ant-btn-primary:focus {
+  border-color: $themeColor;
+  background: $themeColor;
+  span {
+    color: #fff;
+  }
+}
+ .ant-btn:not(.ant-btn-primary):hover {
+  border-color: $themeColor;
+  span {
+    color: $themeColor;
+  }
+  // background: $themeColor;
+}
+.theme-bg {
+  background-color: $themeColor !important;
+}
+
+.button-disable {
+  background-color: $actionColor-0;
+}
+
+:export {
+  navItemHeight: $navItemHeight;
+  themeColor: $themeColor;
+  navWidth: $navWidth;
+  headerHeight: $headerHeight;
+}
