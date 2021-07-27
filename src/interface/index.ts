@@ -21,9 +21,7 @@ export interface routeItem {
   component: unknown,
   url: string,
   props: {
-    title?: {
-      [key: string]: string
-    } | string,
+    title?: string,
     meta?: object
   }
 }

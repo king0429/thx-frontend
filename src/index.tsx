@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import ReactDOM from 'react-dom';
-import {routes} from './router'
+import { routes } from './router'
 import Nav from './components/nav'
 import Header from './components/header'
 import Layout from './components/layout'

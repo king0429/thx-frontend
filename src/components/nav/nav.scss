@@ -8,7 +8,8 @@
   position: fixed;
   left: 0;
   top: $headerHeight + 1px;
-  background: linear-gradient(to bottom, $themeColor 28%, rgb(59,191,220));
+  // background: linear-gradient(to bottom, $themeColor 28%, rgb(59,191,220));
+  background-color: $navBG;
   z-index: 999;
   li {
     // width: calc(100% / 3);
@@ -43,10 +44,10 @@
     }
     &>div:first-child:hover {
       background: #fff;
-      color: $themeColor;
+      color: $navBG;
       span {
         i {
-          color: $themeColor;
+          color: $navBG;
         }
       }
     }
@@ -75,19 +76,19 @@
       }
       div:hover {
         background: #fff;
-        color: $themeColor;
+        color: $navBG;
         span {
           svg {
-            color: $themeColor;
+            color: $navBG;
           }
         }
       }
       .inner_sel {
         background-color: #fff;
-        color: $themeColor;
+        color: $navBG;
         span {
           i {
-            color: $themeColor;
+            color: $navBG;
           }
         }
       }
@@ -100,10 +101,10 @@
   }
   li.sel {
     background-color: #fff;
-    color: $themeColor;
+    color: $navBG;
     span {
       i {
-        color: $themeColor;
+        color: $navBG;
       }
     }
   }

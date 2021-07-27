@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import './header.scss'
-import logo from '../../assets/img/logo/logo.png'
 import { word } from './config'
 import { Modal } from 'antd'
 import { LogoutOutlined } from '@ant-design/icons'
@@ -48,8 +47,8 @@ class Header extends Component<any, any> {
     return (
       <div className="base_header">
         <div className="logo">
-          <img src={logo} alt="" />
-          <span>{this.state.shopName}</span>
+          <svg className="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7434" width="64" height="64"><path d="M41.037 959.973V74.075h53.037v832.856h885.918v53.042z" p-id="7435" fill="#298EEA"></path><path d="M194.881 593.94h113.172v261.708H194.881z" p-id="7436" fill="#298EEA"></path><path d="M392.931 509.063h113.171v346.586H392.931z" p-id="7437" fill="#298EEA"></path><path d="M590.979 332.239h113.173v523.41H590.979z" p-id="7438" fill="#298EEA"></path><path d="M789.029 204.924h113.173V855.65H789.029z" p-id="7439" fill="#298EEA"></path></svg>
+          <span>同合心实业仓库管理</span>
         </div>
         <ul className="slide_tools">
           <li>

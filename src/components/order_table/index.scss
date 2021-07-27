@@ -1,0 +1,29 @@
+@import '../../theme.scss';
+
+.order_table {
+    background: #fff;
+    p {
+    color: #666;
+    line-height: 40px;
+    margin: 0;
+    background: #fff;
+    // margin-bottom: 12px;
+    border-left: 6px solid $themeColor;
+    padding-left: 12px;
+    font-size: 14px;
+  }
+  .table_wrap {
+    button {
+      width: 72px;
+      height: 26px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      background-color: $themeColor;
+      border-radius: 3px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

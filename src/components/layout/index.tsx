@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 import { withRouter } from 'react-router-dom'
-import { ConfigProvider } from 'antd'
 import 'moment/locale/id'
-import id_ID from 'antd/lib/locale-provider/id_ID';
 
 import './layout.scss'
 // type LayoutProps = {
@@ -26,15 +24,12 @@ class Layout extends Component<any, any> {
   }
   render () {
     return (
-      <ConfigProvider locale={id_ID}>
-
-        <div className="base_layout" style={{"minHeight": this.state.minHeight}}>
-          <h4>{this.props.title}</h4>
-          {
-            this.props.children || <div/>
-          }
-        </div>
-      </ConfigProvider>
+      <div className="base_layout" style={{"minHeight": this.state.minHeight}}>
+        <h4>{this.props.title}</h4>
+        {
+          this.props.children || <div/>
+        }
+      </div>
 
     )
   }
