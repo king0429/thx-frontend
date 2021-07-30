@@ -1,7 +1,9 @@
 import { routeItem } from '../interface'
 
 import Index from '../pages/index'
-import OrderList from '../pages/order_list'
+import Production from '../pages/production'
+import Warehouse from '../pages/warehouse'
+import Purchase from '../pages/purchase'
 
 
 
@@ -14,10 +16,24 @@ export const routes:Array<routeItem> = [
     }
   },
   {
-    component: OrderList,
-    url: '/order_list',
+    component: Production,
+    url: '/product/managerment',
     props: {
-      title: '订单列表',
+      title: '产品管理',
+    }
+  },
+  {
+    component: Warehouse,
+    url: '/warehouse/managerment',
+    props: {
+      title: '库存管理',
+    }
+  },
+  {
+    component: Purchase,
+    url: '/purchase/managerment',
+    props: {
+      title: '采购管理',
     }
   },
   // {

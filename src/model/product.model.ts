@@ -7,6 +7,12 @@ import { productListQuery,  productStockQuery, productStatusChange } from '../in
 const apiVersion:string = 'v1'
 
 const productModel:any = {
+  productList: async () => {
+    return await $ajax.get('/api/product')
+  },
+  productTypes: async () => {
+    return await $ajax.get('/api/product_list')
+  },
   getProductList: async (config: productListQuery): Promise<any> => {
     const obj:any = JSON.parse(JSON.stringify(config))
     if (obj.status === 0) delete obj.status

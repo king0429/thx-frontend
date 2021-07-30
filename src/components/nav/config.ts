@@ -13,14 +13,14 @@ const navList:Array<any> = [
     title: '生产管理',
     children: [
       {
-        url: '/product/zidongche',
-        title: '自动车',
+        url: '/product/managerment',
+        title: '产品管理',
         select: false,
         icon: 'iconfont icon-list1'
       },
       {
-        url: '/product/datouji',
-        title: '打头机',
+        url: '/product/outter',
+        title: '外协交工',
         select: false,
         icon: 'iconfont icon-icon_history'
       }
@@ -51,14 +51,14 @@ const navList:Array<any> = [
     icon: 'iconfont icon-settings1',
     children: [
       {
-        url: '/purchase/apply',
-        title: '请购单',
+        url: '/purchase/managerment',
+        title: '外购采购单',
         select: false,
         icon: 'iconfont icon-icon_history'
       },
       {
-        url: '/purchase/history',
-        title: '外购采购单',
+        url: '/purchase/apply',
+        title: '请购单',
         select: false,
         icon: 'iconfont icon-icon_history'
       },

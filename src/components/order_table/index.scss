@@ -25,5 +25,8 @@
       margin: 0;
       padding: 0;
     }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td {
+      padding: 8px 10px;
+    }
   }
 }
