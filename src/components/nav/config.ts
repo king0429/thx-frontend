@@ -7,7 +7,14 @@ const navList:Array<any> = [
     url: '/',
     slide: false,
     select: false,
-    icon: 'iconfont icon-shangpin1'
+    icon: 'iconfont icon-dashujuzhongxin'
+  },
+  {
+    title: '订单管理',
+    url: '/order',
+    slide: false,
+    select: false,
+    icon: 'iconfont icon-dingdanguanli35'
   },
   {
     title: '生产管理',
@@ -16,16 +23,16 @@ const navList:Array<any> = [
         url: '/product/managerment',
         title: '产品管理',
         select: false,
-        icon: 'iconfont icon-list1'
+        icon: 'iconfont icon-shengchanguanli2'
       },
       {
         url: '/product/outter',
         title: '外协交工',
         select: false,
-        icon: 'iconfont icon-icon_history'
+        icon: 'iconfont icon-dingdanguanli1'
       }
     ],
-    icon: 'iconfont icon-order1',
+    icon: 'iconfont icon-shengchanguanli',
     slide: false,
     select: false,
   },
@@ -34,13 +41,13 @@ const navList:Array<any> = [
     // url: '/warehouse',
     slide: false,
     select: false,
-    icon: 'iconfont icon-settings1',
+    icon: 'iconfont icon-kucunguanli1',
     children: [
       {
         url: '/warehouse/managerment',
-        title: '各部门领用查询',
+        title: '入库查询',
         select: false,
-        icon: 'iconfont icon-icon_history'
+        icon: 'iconfont icon-rukuguanli'
       }
     ]
   },
@@ -48,19 +55,19 @@ const navList:Array<any> = [
     title: '采购管理',
     slide: false,
     select: false,
-    icon: 'iconfont icon-settings1',
+    icon: 'iconfont icon-webicon05',
     children: [
       {
         url: '/purchase/managerment',
         title: '外购采购单',
         select: false,
-        icon: 'iconfont icon-icon_history'
+        icon: 'iconfont icon-goodswhoutStock'
       },
       {
         url: '/purchase/apply',
         title: '请购单',
         select: false,
-        icon: 'iconfont icon-icon_history'
+        icon: 'iconfont icon-iconzhengli_shenpi'
       },
     ]
   },
@@ -80,7 +87,7 @@ const navList:Array<any> = [
         icon: 'iconfont icon-icon_history'
       }
     ],
-    icon: 'iconfont icon-order1',
+    icon: 'iconfont icon-neibujixiao',
     slide: false,
     select: false,
   },
@@ -88,13 +95,13 @@ const navList:Array<any> = [
     title: '考核管理',
     slide: false,
     select: false,
-    icon: 'iconfont icon-settings1',
+    icon: 'iconfont icon-caigouguanli',
     children: [
       {
         url: '/test/list',
         title: '考核查看',
         select: false,
-        icon: 'iconfont icon-icon_history'
+        icon: 'iconfont icon-jixiaoguanli'
       },
     ]
   },
@@ -102,19 +109,19 @@ const navList:Array<any> = [
     title: '联络单',
     slide: false,
     select: false,
-    icon: 'iconfont icon-settings1',
+    icon: 'iconfont icon-jiabanshixiang',
     children: [
       {
         url: '/contact/write',
         title: '联络单填写',
         select: false,
-        icon: 'iconfont icon-icon_history'
+        icon: 'iconfont icon-a-mobankubeifen4'
       },
       {
         url: '/contact/list',
         title: '联络单查看',
         select: false,
-        icon: 'iconfont icon-icon_history'
+        icon: 'iconfont icon-kaoheguanlix'
       },
 
     ]

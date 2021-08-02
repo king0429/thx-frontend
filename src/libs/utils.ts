@@ -16,7 +16,7 @@ const months = (str:number) => {
   return str ? ms[str] : ms[0]
 }
 
-const $quary = (obj:any | Array<any> = {}, prefix:string = '?'):string => {
+const $quary = (obj:any | Array<any> = {}, prefix:string | void = '?'):string => {
   const q:Array<any> = []
   for (const item in obj) {
     q.push([item, obj[item]])

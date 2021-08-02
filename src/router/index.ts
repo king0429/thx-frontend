@@ -4,6 +4,8 @@ import Index from '../pages/index'
 import Production from '../pages/production'
 import Warehouse from '../pages/warehouse'
 import Purchase from '../pages/purchase'
+import Order from '../pages/order'
+import Contact from '../pages/contact'
 
 
 
@@ -13,6 +15,13 @@ export const routes:Array<routeItem> = [
     url: '/',
     props: {
       title: '首页'
+    }
+  },
+  {
+    component: Order,
+    url: '/order',
+    props: {
+      title: '订单管理'
     }
   },
   {
@@ -36,6 +45,13 @@ export const routes:Array<routeItem> = [
       title: '采购管理',
     }
   },
+  {
+    component: Contact,
+    url: '/contact/list',
+    props: {
+      title: '联络单'
+    }
+  }
   // {
   //   component: Login,
   //   url: '/login',

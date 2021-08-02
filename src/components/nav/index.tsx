@@ -42,7 +42,7 @@ class Nav extends Component<any, any> {
       if (!item.children) {
         nav.forEach(val => {
           val.select = false
-          val.slide = false
+          // val.slide = false
           if (val.children) {
             val.children.forEach((inner: any) => {
               inner.select = false
@@ -50,7 +50,7 @@ class Nav extends Component<any, any> {
           }
         })
       } else {
-        nav[index].slide = true
+        nav[index].slide = !nav[index].slide
       }
       nav[index].select = true
       this.setState({nav}, () => {
@@ -103,10 +103,21 @@ class Nav extends Component<any, any> {
           this.state.nav.map((val: NavItem, index: number) => (
             <li key={index} onClick={(e) => this.handleNav(e, val, index, 0, false)} className={val.select && !val.children ? 'sel' : ''}>
               <div>
-                <span className="icon_wrap">
-                  <i className={val.icon} />
-                </span>
-                <span>{val.title}</span>
+                <div className="title_info">
+                  <span className="icon_wrap">
+                    <i className={val.icon} />
+                  </span>
+                  <span>{val.title}</span>
+                </div>
+                {
+                  val.children ? 
+                  <div style={{transform: val.slide ? `rotate(90deg)` : ''}}>
+                    <i className="iconfont icon-xiayiye1" ></i>
+                  </div>
+                  :
+                  null
+                }
+
               </div>
               {
                 val.children ? 
